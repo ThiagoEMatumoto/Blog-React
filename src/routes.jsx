@@ -6,19 +6,21 @@ import Menu from "./components/Menu/Menu";
 import Rodape from "./components/Rodape/Rodape";
 import PagPadrao from "./components/PagPadrao/PagPadrao";
 import Post from "./pages/PostPage/Post";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function AppRoutes() {
   return (
     <BrowserRouter>
+    <ScrollToTop/>
       <Menu />
 
       <Routes>
         <Route path="/" element={<PagPadrao />}>
           <Route index element={<Inicio />} />
           <Route path="sobremim" element={<SobreMim />} />
-          <Route path="posts/:id" element={<Post/>}/>
         </Route>
 
+        <Route path="posts/:id/*" element={<Post/>}/>
         <Route path="*" element={<NotFound />} />
       </Routes>
 
