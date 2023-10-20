@@ -4,8 +4,7 @@ import SobreMim from "./pages/SobreMim/SobreMim";
 import NotFound from "./pages/NotFound/NotFound";
 import Menu from "./components/Menu/Menu";
 import Rodape from "./components/Rodape/Rodape";
-
-
+import PagPadrao from "./components/PagPadrao/PagPadrao";
 
 function AppRoutes() {
   return (
@@ -13,12 +12,15 @@ function AppRoutes() {
       <Menu />
 
       <Routes>
-        <Route path="/" element={<Inicio />} />
-        <Route path="/sobremim" element={<SobreMim />} />
+        <Route path="/" element={<PagPadrao />}>
+          <Route index element={<Inicio />} />
+          <Route path="sobremim" element={<SobreMim />} />
+        </Route>
+
         <Route path="*" element={<NotFound />} />
       </Routes>
-      
-      <Rodape/>
+
+      <Rodape />
     </BrowserRouter>
   );
 }
