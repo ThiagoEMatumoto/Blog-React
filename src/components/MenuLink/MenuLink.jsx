@@ -7,7 +7,7 @@ const MenuLink = ({ children, to }) => {
     <NavLink
       className={({ isActive }) => `
     ${styles.link}
-    ${isActive ? styles.linkDestacado : ""}
+    ${isActive ? styles.link_Destaque: ""}
 `}
       to={to}
     >

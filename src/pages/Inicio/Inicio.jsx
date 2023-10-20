@@ -1,10 +1,11 @@
 import React from 'react'
+import Banner from '../../components/Banner/Banner'
 
 const Inicio = () => {
   return (
-    <div>
-      <h1>Olá mundo</h1>
-    </div>
+    <main>
+      <Banner/>
+    </main>
   )
 }
 
