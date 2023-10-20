@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Banner.module.css'
-import circuloColorido from '../../assets/video-2.3/assets/circulo_colorido.png'
+import circuloColorido from '../../assets/circulo_colorido.png'
 import minhaFoto from '../../assets/thiagoPerfil.svg'
 
 const Banner = () => {
