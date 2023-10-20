@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./PostCard.module.css";
 import { Link } from "react-router-dom";
+import Botao from "../Botao/Botao";
 
 const PostCard = ({ post }) => {
   return (
@@ -12,7 +13,9 @@ const PostCard = ({ post }) => {
           alt="Imagem de capa do post"
         />
         <h2 className={styles.titulo}>{post.titulo}</h2>
-        <button className={styles.botaoLer}>Ler</button>
+        <Botao>
+          Ler
+        </Botao>
       </div>
     </Link>
   );
