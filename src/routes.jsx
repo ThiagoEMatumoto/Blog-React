@@ -5,6 +5,7 @@ import NotFound from "./pages/NotFound/NotFound";
 import Menu from "./components/Menu/Menu";
 import Rodape from "./components/Rodape/Rodape";
 import PagPadrao from "./components/PagPadrao/PagPadrao";
+import Post from "./pages/PostPage/Post";
 
 function AppRoutes() {
   return (
@@ -15,6 +16,7 @@ function AppRoutes() {
         <Route path="/" element={<PagPadrao />}>
           <Route index element={<Inicio />} />
           <Route path="sobremim" element={<SobreMim />} />
+          <Route path="posts/:id" element={<Post/>}/>
         </Route>
 
         <Route path="*" element={<NotFound />} />
