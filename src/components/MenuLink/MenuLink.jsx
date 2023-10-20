@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./MenuLink.module.css";
-import { Link, useLocation, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const MenuLink = ({ children, to }) => {
   return (
