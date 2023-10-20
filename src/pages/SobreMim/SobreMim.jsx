@@ -1,9 +1,12 @@
 import React from 'react'
+import PostaHeader from '../../components/PostHeader/PostaHeader'
 
 const SobreMim = () => {
   return (
     <div>
-      <h1>Sobre Mim</h1>
+      <PostaHeader>
+        
+      </PostaHeader>
     </div>
   )
 }
